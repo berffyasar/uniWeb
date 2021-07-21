@@ -1,0 +1,135 @@
+/* MENÜ */
+@media screen and (max-width: 800px) {
+  .Header .menu li:not(:first-child) {display: none;}
+  
+  .menu li:nth-child(1) {
+   margin-left: 100px;
+   margin-bottom: 50px;
+  }
+
+}
+@media screen and (max-width: 500px) {
+  .menu {position: relative;}
+  .menu .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu .icon {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.trailer {
+  position: relative;
+  height: 102%;
+  overflow: hidden;
+  margin-bottom: -132px;
+  top: -160px;
+  text-align: center;
+  box-shadow: inset 0px 5px 28px -5px #000000;
+}
+/* SLİDER */
+.sliderleft{width:0;height:0;line-height:0;}
+.sliderright{margin-left:0;cursor:pointer;background:rgba(0,0,0,0.2);position:absolute;width:0;height:0;line-height:0;}
+/* HIZLI ERİŞİMLER */
+
+#hızlıerişimler{
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+#hızlıerişimler .ikons li a{
+  padding:5px,5px;
+}
+
+#hızlıerişimler .ikons img{
+
+  height: 30px;
+  width: 55px;
+}
+#hızlıerişimler .ikons p{
+  text-align: center;
+  font-size: 12px;
+  color: #a09391;
+}
+
+/* DUYURULAR */
+#duyurular{
+    margin-left: 0;
+    background-color: #fff;
+    width: 475px;
+    border: 15px;
+    margin-bottom: 20px;    
+}
+.page{
+    display: flex;
+    flex-direction: column;
+}
+/* GALERİ */
+#galeri{
+    margin: 45px;
+    background-color: #fff;
+    width: 405px;
+}
+
+.düzen3{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: #dc2c1d;
+   color: #fff;
+   margin-right:  250px;
+   margin-left: 10px;
+}
+
+/* Etkinlikler ve Haberler */
+.slider .slider__inner .slider__contents img{
+  width: 400px;
+  height: 440px;
+   }
+   .slider .slider__inner{
+       height: 600px;
+   }
+.slider{
+ height: 75%;
+}
+.slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+    left: 0%;
+  }
+  .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+    left: -95%;
+  }
+  .slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+    left: -190%;
+  }
+  .slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+    left: -285%;
+  }
+/* FOOTER */
+#footer img{
+    margin-top: 50px;
+    margin-left: 5px;
+    width: 400px;
+    margin-bottom: 10px;
+    
+}
+#footer .footerLink ul{
+    display: flex;
+    flex-direction: column;
+   
+}
+#footer .footerLink li {
+  margin-top:  25px;
+}
+
+#footer .footerLink li  a{
+    margin-left:  25px;
+  }
+
+  #footer h3{
+   margin-left: 16px;
+}
+

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--tablet, telefon-->
     <link rel="stylesheet" media="(max-width:768px)" href="tablet.css"/>
-    <link rel="stylesheet" media="(max-width:500px)" href="mobile.css"/>
+    <link rel="stylesheet" media="(max-width:500px)" href="telefon.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <title>Document</title>
@@ -107,71 +107,963 @@
 </head>
 <body >
 
-<!-- MENÜ -->
-<header class="header">
+<!-- MENÜ -->  
+   
+    <div class="Header home-page">
+        <div class="shadow"></div>
+        <div class="Header-inner">
 
-    <div class="logo">
-        <img src="http://www.firat.edu.tr/front/images/firat_orj_b.png" alt="" width="75px"> 
-    </div>
-
-    <nav class="nav">
-        <ul class="main-list">
-            <li class="list-item"><a href="#">KURUMSAL</a></li>
-            <li class="list-item"><a href="#">ÖĞRENCİ</a></li>
-           <li class="list-item"><a href="#">AKADEMİK</a></li>
-            <li class="list-item"><a href="#">ARAŞTIRMA</a></li>
-            <li class="list-item"><a href="#">BİLGİ SİSTEMLERİ</a></li>
-            <li class="list-item"><a href="#">KAMPÜSTE YAŞAM</a></li>
-            <li class="list-item"><a href="#">COVİD-19</a></li>
-            <li class="list-item"><a href="#">İLETİŞİM</a></li>
+            <div class="menu-sup">
             
-    </nav>
+                <div class="menu">
+                    <a class="main-logo" href="http://www.firat.edu.tr/tr"><img src="http://www.firat.edu.tr/front/images/firat_orj_b.png" alt=""></a>
+                   
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                              </a>
+                              <ul class="big-submenu column4">
+                                <div class="bg-logo">
+                                    <img src="http://www.firat.edu.tr/front/images/orj_b_s.png" alt="">
+                                </div>
+                                <li style="display:flex;flex-direction: column;">
+                                    <a href="#">KURUMSAL</a>
+                                    <a href="#">ÖĞRENCİ</a>
+                                    <a href="#">AKADEMİK</a>
+                                    <a href="#">ARAŞTIRMA</a>
+                                    <a href="#">BİLGİ SİSTEMLERİ</a>
+                                    <a href="#">KAMPÜSTE YAŞAM</a>
+                                    <a href="#">COVİD-19</a>
+                                    <a href="#">İLETİŞİM</a>
+                                </li>
+                              </ul>
+                        </li>     
+                      <li>
+                       <a href="#">KURUMSAL</a>
+                                                                    
+                                                                    <ul class="big-submenu column4">
+                                                                                    <div class="bg-logo">
+                                                <img src="http://www.firat.edu.tr/front/images/orj_b_s.png" alt="">
+                                            </div>
+                                                                                
+                                                                                            <li style="display:flex;flex-direction: column;">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">YÖNETİM</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                                                                                        <li>
+                                                                        <a href="http://www.firat.edu.tr/administration">
+                                                                            <i class="fa fa-chevron-right"></i>Rektör
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a href="http://www.firat.edu.tr/administration?appellation_id=2">
+                                                                            <i class="fa fa-chevron-right"></i>Rektör Yardımcıları
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://icdb.firat.edu.tr/tr">
+                                                                            <i class="fa fa-chevron-right"></i>İç Denetim Birimi Başkanlığı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a href="http://www.firat.edu.tr/administration?appellation_id=3">
+                                                                            <i class="fa fa-chevron-right"></i>Genel Sekreter
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a href="http://www.firat.edu.tr/administration?appellation_id=4">
+                                                                            <i class="fa fa-chevron-right"></i>Yönetim Kurulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a href="http://www.firat.edu.tr/administration?appellation_id=5">
+                                                                            <i class="fa fa-chevron-right"></i>Senato
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a href="http://www.firat.edu.tr/administration?board_id=1">
+                                                                            <i class="fa fa-chevron-right"></i>Kurullar
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a href="http://www.firat.edu.tr/administration?commission_id=18">
+                                                                            <i class="fa fa-chevron-right"></i>Komisyonlar
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                <li><a href="http://www.firat.edu.tr/tr/page/menu/strateji-gelistirme-kurulu-4052"><i class="fa fa-chevron-right"></i>Strateji Geliştirme Kurulu</a></li>
+                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://etikkurul.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Akademik Etik Kurulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://genelsekreterlik.firat.edu.tr/tr/node/107">
+                                                                            <i class="fa fa-chevron-right"></i>Özel Kalem Müdürlüğü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                    
+                                                                                            <li style="display:flex;flex-direction: column;">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">ÜNİVERSİTEMİZ</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                    <li><a href="http://www.firat.edu.tr/tr/page/menu/organizasyon-yapisi-4054"><i class="fa fa-chevron-right"></i>Yönetim ve Organizasyon Yapısı</a></li>
+                                                                                                                                                                                                                                                <li><a href="http://www.firat.edu.tr/tr/page/menu/misyon-ve-vizyon-4053"><i class="fa fa-chevron-right"></i>Misyon ve Vizyon</a></li>
+                                                                                                                                                                                                                                                <li><a href="http://www.firat.edu.tr/tr/page/menu/temel-degerler-4055"><i class="fa fa-chevron-right"></i>Temel Değerler</a></li>
+                                                                                                                                                                                                                                                <li><a href="http://www.firat.edu.tr/tr/page/menu/tarihce-4056"><i class="fa fa-chevron-right"></i>Tarihçe</a></li>
+                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="https://www.youtube.com/watch?v=MQV9bEFpmKw">
+                                                                            <i class="fa fa-chevron-right"></i>Tanıtım Filmi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                <li><a href="http://www.firat.edu.tr/tr/page/menu/kurumsal-kimlik-kilavuzu-4066"><i class="fa fa-chevron-right"></i>Kurumsal Kimlik Kılavuzu</a></li>
+                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a href="http://www.firat.edu.tr/gallery/photos">
+                                                                            <i class="fa fa-chevron-right"></i>Fotoğraflarla Fırat
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a href="http://www.firat.edu.tr/document">
+                                                                            <i class="fa fa-chevron-right"></i>Dokümanlar
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                    
+                                                                                            <li style="display:flex;flex-direction: column;">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">DAİRE BAŞKANLIKLARI</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                                                                                        <li>
+                                                                        <a target="_blank" href="http://bilgiislem.db.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Bilgi İşlem Daire Başkanlığı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://idarimali.db.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>İdari ve Mali İşler Daire Başkanlığı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://kutuphane.db.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Kütüphane ve Dokümantasyon Daire Başkanlığı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://ogrenci.db.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Öğrenci İşleri Daire Başkanlığı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://personel.db.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Personel Daire Başkanlığı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://sks.db.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Sağlık Kültür ve Spor Daire Başkanlığı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://yapi.db.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Yapı İşleri ve Teknik Daire Başkanlığı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://strateji.db.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Strateji Geliştirme Daire Başkanlığı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                    
+                                                                                            <li style="display:flex;flex-direction: column;">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">MÜDÜRLÜKLER</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                                                                                        <li>
+                                                                        <a target="_blank" href="http://basin.mud.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Basın Yayın ve Halkla İlişkiler Müdürlüğü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://donersermy.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Döner Sermaye İşletme Müdürlüğü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="https://fubap.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Fırat Üniversitesi Bilimsel Araştırma Projeleri Birimi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://guvenlik.mud.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Güvenlik Müdürlüğü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://karakocanyurt.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Karakoçan MYO Öğrenci Yurdu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                    
+                                                                                            <li style="display:flex;flex-direction: column;">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">KOORDİNATÖRLÜKLER</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                                                                                        <li>
+                                                                        <a target="_blank" href="http://osym.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>ÖSYM Elazığ İl Koordinatörlüğü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://ddo.firat.edu.tr/tr">
+                                                                            <i class="fa fa-chevron-right"></i>Dijital Dönüşüm ve Yazılım Ofisi Koordinatörlüğü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://oyp.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>ÖYP Koordinatörlüğü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://dib.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Dış İlişkiler Birimi Koordinatörlüğü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://hukuk.firat.edu.tr/tr">
+                                                                            <i class="fa fa-chevron-right"></i>Hukuk Müşavirliği Koordinatörlüğü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                    
+                                                                                            <li style="display:flex;flex-direction: column;">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">ULUSLARARASI OFİS</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                                                                                        <li>
+                                                                        <a target="_blank" href="http://dib.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Dış İlişkiler Birimi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                                                        </ul>
+                                                            </li>
+                                                    <li>
+                                                                                                            <a href="#">
+                                            ÖĞRENCİ
+                                        </a>
+                                                                    
+                                                                    <ul class="big-submenu column4">
+                                                                                    <div class="bg-logo">
+                                                <img src="http://www.firat.edu.tr/front/images/orj_b_s.png" alt="">
+                                            </div>
+                                                                                
+                                                                                            <li style="display:flex;flex-direction: column;">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">ADAY ÖĞRENCİ</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                    <li><a href="http://www.firat.edu.tr/tr/page/menu/misyon-ve-vizyon-4060"><i class="fa fa-chevron-right"></i>Misyon ve Vizyon</a></li>
+                                                                                                                                                                                                                                                <li><a href="http://www.firat.edu.tr/tr/page/menu/temel-degerler-4061"><i class="fa fa-chevron-right"></i>Temel Değerler</a></li>
+                                                                                                                                                                                                                                                <li><a href="http://www.firat.edu.tr/tr/page/menu/tarihce-4063"><i class="fa fa-chevron-right"></i>Tarihçe</a></li>
+                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a href="http://www.firat.edu.tr/gallery/photos">
+                                                                            <i class="fa fa-chevron-right"></i>Fotoğraflarla Fırat
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://dib.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Uluslararası İlişkiler
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://www.elazig.gov.tr/sehrimiz">
+                                                                            <i class="fa fa-chevron-right"></i>Elazığ Tanıtım
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="https://www.youtube.com/watch?v=MQV9bEFpmKw">
+                                                                            <i class="fa fa-chevron-right"></i>Tanıtım Filmi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                    
+                                                                                            <li style="display:flex;flex-direction: column;">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">ÖĞRENCİLERİMİZ</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                                                                                        <li>
+                                                                        <a target="_blank" href="http://yos.firat.edu.tr/tr">
+                                                                            <i class="fa fa-chevron-right"></i>International Students
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                <li><a target="_blank" href="http://www.firat.edu.tr/tr/document?file_category_id=66&amp;menu_id=406"><i class="fa fa-chevron-right"></i>Akademik Takvim</a></li>
+                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://ogrenci.db.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Öğrenci İşleri Daire Başkanlığı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://obs.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Öğrenci Bilgi Sistemi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="https://obs.firat.edu.tr/oibs/bologna/start.aspx?gkm=04043552532220333003550535600229235485333453778435600">
+                                                                            <i class="fa fa-chevron-right"></i>Bologna Bilgi Sistemi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://yazokulu.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Yaz Okulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://dib.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Dış İlişkiler Birimi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                <li><a href="http://www.firat.edu.tr/tr/page/menu/burs-imkanlari-4058"><i class="fa fa-chevron-right"></i>Burs İmkanları</a></li>
+                                                                                                                                                                                                                                                <li><a href="http://www.firat.edu.tr/tr/page/menu/ogrenci-kulupleri-4057"><i class="fa fa-chevron-right"></i>Öğrenci Kulüpleri</a></li>
+                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://dib.firat.edu.tr/node/40">
+                                                                            <i class="fa fa-chevron-right"></i>Erasmus
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://ogrencikonseyi.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Öğrenci Konseyi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://farabi.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Farabi Programı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://mevlana.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Mevlana Programı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="https://fuyos.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Uluslararası Öğrenci Sınavı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                    
+                                                                                            <li style="display:flex;flex-direction: column;">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">MEZUN</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                                                                                        <li>
+                                                                        <a target="_blank" href="https://obs.firat.edu.tr/oibs/kariyer/">
+                                                                            <i class="fa fa-chevron-right"></i>Mezun Bilgi Sistemi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                <li><a href="http://www.firat.edu.tr/tr/page/menu/mezun-soyleyisileri-4090"><i class="fa fa-chevron-right"></i>Mezun Söyleyişileri</a></li>
+                                                                                                                                                                                                                                                <li><a href="http://www.firat.edu.tr/tr/page/menu/mezun-toplantilari-4091"><i class="fa fa-chevron-right"></i>Mezun Toplantıları</a></li>
+                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                                                        </ul>
+                                                            </li>
+                                                    <li>
+                                                                                                            <a href="#">
+                                            AKADEMİK
+                                        </a>
+                                                                    
+                                                                    <ul class="big-submenu column4">
+                                                                                    <div class="bg-logo">
+                                                <img src="http://www.firat.edu.tr/front/images/orj_b_s.png" alt="">
+                                            </div>
+                                                                                
+                                                                                            <li style="display:flex;flex-direction: column;">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">FAKÜLTELER</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                                                                                        <li>
+                                                                        <a target="_blank" href="http://dhf.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Diş Hekimliği Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://egt.firat.edu.tr/tr">
+                                                                            <i class="fa fa-chevron-right"></i>Eğitim Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://fen.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Fen Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://isb.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>İnsani ve Sosyal Bilimler Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://iib.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>İktisadi ve İdari Bilimleri Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://ilahiyat.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>İlahiyat Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://iletisim.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>İletişim Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://mimarlik.firat.edu.tr/tr">
+                                                                            <i class="fa fa-chevron-right"></i>Mimarlık Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://muh.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Mühendislik Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://sagb.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Sağlık Bilimleri Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://suurunleri.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Su Ürünleri Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://sb.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Spor Bilimleri Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://tek.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Teknoloji Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://tef.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Teknik Eğitim Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://yenitip.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Tıp Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://veteriner.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Veteriner Fakültesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                    
+                                                                                            <li style="display:flex;flex-direction: column;">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">ENSTİTÜLER</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                                                                                        <li>
+                                                                        <a target="_blank" href="http://ebe.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Eğitim Bilimleri Enstitüsü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://sbe.firat.edu.tr/tr">
+                                                                            <i class="fa fa-chevron-right"></i>Sağlık Bilimleri Enstitüsü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://sosbe.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Sosyal Bilimler Enstitüsü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://fbe.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Fen Bilimleri Enstitüsü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://enstitu.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Enstitüler (Online Başvuru)
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                    
+                                                                                            <li style="display:flex;flex-direction: column;">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">YÜKSEKOKULLAR</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                                                                                        <li>
+                                                                        <a target="_blank" href="http://ydyo.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Yabancı Diller Yüksekokulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://konservatuar.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Devlet Konservatuvarı
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://shyo.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Sivil Havacılık Yüksekokulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                    
+                                                                                            <li style="display:flex;flex-direction: column;">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">MESLEK YÜKSEKOKULLARI</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                                                                                        <li>
+                                                                        <a target="_blank" href="http://bmyo.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Baskil Meslek Yüksekokulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://eosbmyo.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Elazığ Organize Sanayi Bölgesi Meslek Yüksekokulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://kamyo.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Karakoçan Meslek Yüksekokulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://kemyo.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Keban Meslek Yüksekokulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://komyo.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Kovancılar Meslek Yüksekokulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://shmyo.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Sağlık Hizmetleri Meslek Yüksekokulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://smyo.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Sivrice Meslek Yüksekokulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://sbmyo.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Sosyal Bilimler Meslek Yüksekokulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://tbmyo.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Teknik Bilimler Meslek Yüksekokulu
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                    
+                                                                                            <li style="display:flex;flex-direction: column;" class="menu-5">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">REKTÖRE BAĞLI BİRİMLER</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                                                                                        <li>
+                                                                        <a target="_blank" href="http://enformatik.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Enformatik Bölümü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://hh.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Hayvan Hastanesi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                    <li>
+                                                                        <a target="_blank" href="http://td.firat.edu.tr/">
+                                                                            <i class="fa fa-chevron-right"></i>Türk Dili Bölümü
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                    
+                                                                                            <li style="display:flex;flex-direction: column;" class="menu-6">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">DERS KATALOGLARI</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                                                                                        <li>
+                                                                        <a target="_blank" href="https://obs.firat.edu.tr/oibs/bologna/start.aspx?gkm=04043552532220333003550535600229235485333453778435600">
+                                                                            <i class="fa fa-chevron-right"></i>Bologna Bilgi Sistemi
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                    
+                                                                                            <li style="display:flex;flex-direction: column;" class="menu-7">
+                                                    <div style="display: block;width: 100%;">
+                                                        <img style="width: 12px" src="http://www.firat.edu.tr/front/images/shape.png" alt="">
+                                                        <span class="submenu-title">ARAŞTIRMA MERKEZLERİ</span>
+                                                    </div>
+                                                    <ul>
+                                                                                                                                                                                    <li><a href="http://www.firat.edu.tr/tr/page/menu/firat-universitesi-arastirma-merkezleri-4096"><i class="fa fa-chevron-right"></i>Fırat Üniversitesi Araştırma Merkezleri</a></li>
+                                                                                                                                                                        </ul>
+                                                </li>
+                                                                                                                        </ul>
+                                                            </li>
+                                                    <li>
+                                                                                                            <a href="#">
+                                            ARAŞTIRMA
+                                        </a>
+                                                                    
+                                                                    <ul class="mini-submenu">
+                                                                                
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://fubap.firat.edu.tr/">
+                                                                Araştırma Projeler Birimi
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://www.firatteknokent.com.tr/">
+                                                                Fırat Teknokent
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                            <a target="_blank" href="http://www.firat.edu.tr/tr/page/menu/universite-yayinlari-4062">Üniversite Yayınları</a>
+                                                                                                    </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="http://kutuphane.db.firat.edu.tr/">
+                                                                Kütüphane
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://firattto.com/">
+                                                                Fırat Teknoloji Transfer Ofisi
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="http://harputkalekazisi.firat.edu.tr/">
+                                                                Harput İç Kale Kazısı
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="http://merlab.firat.edu.tr/">
+                                                                Merlab (Merkezi Laboratuvar)
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                                                        </ul>
+                                                            </li>
+                                                    <li>
+                                                                                                            <a href="#">
+                                            BİLGİ SİSTEMLERİ
+                                        </a>
+                                                                    
+                                                                    <ul class="mini-submenu">
+                                                                                
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://abs.firat.edu.tr/">
+                                                                Akademik Bilgi Sistemi
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://obs.firat.edu.tr/">
+                                                                Öğrenci Bilgi Sistemi
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://obs.firat.edu.tr/oibs/kariyer/">
+                                                                Mezun Bilgi Sistemi
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                            <a target="_blank" href="http://www.firat.edu.tr/tr/page/menu/webmail-4138">E-Posta Sistemi</a>
+                                                                                                    </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://ebys.firat.edu.tr/cas/">
+                                                                Elektronik Belge Yönetim Sistemi
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://pbs.firat.edu.tr/">
+                                                                Personel Bilgi Sistemi
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://indir.firat.edu.tr/">
+                                                                Dosya İndirme Sistemi
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://anket.firat.edu.tr/">
+                                                                Fırat Akademik Anket
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="http://webtest3.firat.edu.tr/tr/phone_book">
+                                                                Telefon Rehberi
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="http://enstitu.firat.edu.tr/">
+                                                                Enstitü Otomasyonu
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://openaccess.firat.edu.tr/xmlui/?locale-attribute=tr">
+                                                                Kurumsal Açık Arşiv
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://konut.firat.edu.tr/">
+                                                                Konut Otomasyonu
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="http://ktarama.firat.edu.tr/yordambt/yordam.php">
+                                                                Kütüphane Katalog Tarama
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                                                        </ul>
+                                                            </li>
+                                                    <li>
+                                                                                                            <a href="#">
+                                            KAMPÜSTE YAŞAM
+                                        </a>
+                                                                    
+                                                                    <ul class="mini-submenu">
+                                                                                
+                                                                                            <li>
+                                                                                                                                                                        <a href="http://www.firat.edu.tr/page/event"> Etkinlikler </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="http://uevi.firat.edu.tr/">
+                                                                Üniversite Evi
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://gazete.firat.edu.tr/">
+                                                                Fırat Haber
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="https://www.firatradyotv.com/">
+                                                                Fırat Televizyonu
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a href="http://www.firat.edu.tr/contact"> İletişim </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="http://kutuphane.db.firat.edu.tr/">
+                                                                Kütüphane
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                            <a target="_blank" href="http://www.firat.edu.tr/tr/page/menu/konferans-salonlari-4064">Konferans Salonları</a>
+                                                                                                    </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="http://sks.db.firat.edu.tr/tr/node/419">
+                                                                Sosyal Merkez
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="http://sosyaltesisler.firat.edu.tr/">
+                                                                Sosyal Tesisler
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                            <a target="_blank" href="http://www.firat.edu.tr/tr/page/menu/ulasim-servisler-4065">Ulaşım-Servisler</a>
+                                                                                                    </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a href="http://www.firat.edu.tr/gallery/photos"> Medya Galeri </a>
+                                                                                                                                                            </li>
+                                                                                                                        </ul>
+                                                            </li>
+                                                    <li>
+                                                                                                            <a href="#">
+                                            COVID-19
+                                        </a>
+                                                                    
+                                                                    <ul class="mini-submenu">
+                                                                                
+                                                                                            <li>
+                                                                                                                                                                        <a target="_blank" href="http://kovid.firat.edu.tr/">
+                                                                Koronavirus Salgın Danışma Komisyonu
+                                                            </a>
+                                                                                                                                                            </li>
+                                                                                    
+                                                                                            <li>
+                                                                                                                                                                        <a href="http://www.firat.edu.tr/documents/1606914914.pdf"> Yeni Covid-19 Tedbirleri </a>
+                                                                                                                                                            </li>
+                                                                                                                        </ul>
+                                                            </li>
+                                                    <li>
+                                                                                                            <a href="http://www.firat.edu.tr/contact">
+                                            İLETİŞİM
+                                        </a>
+                                                                    
+                                                            </li>
 
-    <div class="search-box">
-        <input type="text" class="search" placeholder="Arama Metni..">
-        <i class="fas fa-search"></i>
+                                                            <li>
+                                                                <form role="search" method="get" id="searchform" action="">
+                                                                    <label for="s">
+                                                                      <i class="fa fa-search"></i>
+                                                                    </label>
+                                                                    <input type="text" value="" placeholder="Arama..." class="" id="s"  />
+                                                                  </form>
+                                                            </li>
+                                                        
+                                                              
+                                                           
+                                                                                        
+                        
+                    </ul>
+                  
+                  
+                  
+                </div>
+            </div>
+        </div>
+<script>function myFunction() {
+    var x = document.getElementById("ustMenu");
+    if (x.className === "menu") {
+      x.className += " responsive";
+    } else {
+      x.className = "menu";
+    }
+  }</script>
+            
+
+    <div class="trailer">
+    
+
+        <div id="slider">
+            <div class="sliderleft"></div>
+            <div class="sliderright"></div>
+            <li><img src="./\img\poster.jpg" alt=""></li>
+            <li><img src="./\img\DJG9PjvXUAEEGW9.jpg" alt=""></li>
+            <li><img src="./\img\20160823124532-20181220105756.jpg" alt=""></li>
+            <li><img src="./\img\frt_0.jpg" alt=""></li>
+          
+         </div>
+        
+         <div class="sliderbutton">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+           
+        </div>
+        <br>  
+        <marquee behavior=alternate bgcolor="#dc2c1d">
+            2209-B SANAYİYE YÖNELİK ÜNİVERSİTE ARAŞTIRMA PROJELERİ DESTEĞİ PROGRAMI 2021 YILI 2. DÖNEM ÇAĞRISI     
+        </marquee> 
+    
+        <div id="hızlıerişimler">
+            
+            <ul class="ikons">        
+                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601025374.jpg" alt=""></a><p>EBYS</p></li> 
+                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601029265.jpg" alt=""></a><p>OBS</p></li> 
+                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601029325.jpg" alt=""></a><p>ABS</p></li> 
+                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030307.jpg" alt=""></a><p>Fırat Haber</p></li> 
+                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030371.jpg" alt=""></a><p>KÜTÜPHANE</p></li> 
+                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030454.jpg" alt=""></a><p>Dış İlişkiler</p></li>
+            </ul>
+            <ul class="ikons">
+               
+                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030547.jpg"></a><P>E-Posta</P></li> 
+                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030636.jpg"></a><P>Mezun Bilgi Sistemi</P></li> 
+                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030833.jpg"></a><P>Erasmus</P></li> 
+                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030875.jpg"></a><p>UZAKTAN EĞİTİM</p></li> 
+                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030935.jpg"></a><p>HASTANE</p></li> 
+                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030990.jpg"></a><p>BBS</p></li>  
+            </ul>   
+               
+        </div>
+
     </div>
 
+
+    </div>
 </header>
 <!-- SLİDER-->
-    <div id="slider">
-        <div class="sliderleft"></div>
-        <div class="sliderright"></div>
-        <li><img src="./\img\poster.jpg" alt=""></li>
-        <li><img src="./\img\frt_0.jpg" alt=""></li>
-        <li><img src="./\img\DJG9PjvXUAEEGW9.jpg" alt=""></li>
-        <li><img src="./\img\20160823124532-20181220105756.jpg" alt=""></li>
-     </div>
-    
-     <div class="sliderbutton">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-       
-    </div>
- <br>   
-<!-- HIZLI GEÇİŞLER -->
-    <marquee behavior=alternate bgcolor="#dc2c1d">
-        2209-B SANAYİYE YÖNELİK ÜNİVERSİTE ARAŞTIRMA PROJELERİ DESTEĞİ PROGRAMI 2021 YILI 2. DÖNEM ÇAĞRISI     
-    </marquee> 
 
-    <div id="hızlıerişimler">
-        <ul class="ikons">        
-            <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601025374.jpg" alt=""></a><p>EBYS</p></li> 
-            <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601029265.jpg" alt=""></a><p>OBS</p></li> 
-            <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601029325.jpg" alt=""></a><p>ABS</p></li> 
-            <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030307.jpg" alt=""></a><p>Fırat Haber</p></li> 
-            <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030371.jpg" alt=""></a><p>KÜTÜPHANE</p></li> 
-            <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030454.jpg" alt=""></a><p>Dış İlişkiler</p></li>
-            <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030547.jpg"></a><P>E-Posta</P></li> 
-            <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030636.jpg"></a><P>Mezun Bilgi Sistemi</P></li> 
-            <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030833.jpg"></a><P>Erasmus</P></li> 
-            <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030875.jpg"></a><p>UZAKTAN EĞİTİM</p></li> 
-            <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030935.jpg"></a><p>HASTANE</p></li> 
-            <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030990.jpg"></a><p>BBS</p></li>  
-        </ul>
-    </div>
+ 
+<!-- HIZLI GEÇİŞLER -->
+
     <div class="düzen3">
         <h3>HABERLER<hr></h3>Tüm Haberler   
     </div>
@@ -181,28 +1073,28 @@
         <input type="radio" name="slider" title="slide3" class="slider__nav"/>
         <input type="radio" name="slider" title="slide4" class="slider__nav"/>
         <div class="slider__inner">
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/0_ZpkJdF2_8/hqdefault.jpg" alt=""> 
+          <div class="slider__contents"><img src="https://i.ytimg.com/vi/0_ZpkJdF2_8/hqdefault.jpg" alt="" width="400px" height="440px"> 
             
           </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/7bqahioS-IY/hqdefault.jpg" alt="">
+          <div class="slider__contents"><img src="https://i.ytimg.com/vi/7bqahioS-IY/hqdefault.jpg" alt="" width="400px" height="440px">
           </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/APtbVpgnkbA/hqdefault.jpg" alt="">
+          <div class="slider__contents"><img src="https://i.ytimg.com/vi/APtbVpgnkbA/hqdefault.jpg" alt="" width="400px" height="440px">
           </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/Ak7JIQXjyck/hqdefault.jpg" alt="">
+          <div class="slider__contents"><img src="https://i.ytimg.com/vi/Ak7JIQXjyck/hqdefault.jpg" alt="" width="400px" height="440px">
           </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/CLQg3aHctNk/hqdefault.jpg" alt="">
+          <div class="slider__contents"><img src="https://i.ytimg.com/vi/CLQg3aHctNk/hqdefault.jpg" alt="" width="400px" height="440px">
           </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/ErALre8W2HQ/hqdefault.jpg" alt="">
+          <div class="slider__contents"><img src="https://i.ytimg.com/vi/ErALre8W2HQ/hqdefault.jpg" alt="" width="400px" height="440px">
           </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/RfTl4KAZ4lQ/hqdefault.jpg" alt="">
+          <div class="slider__contents"><img src="https://i.ytimg.com/vi/RfTl4KAZ4lQ/hqdefault.jpg" alt="" width="400px" height="440px">
           </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/7bqahioS-IY/hqdefault.jpg" alt="">
+          <div class="slider__contents"><img src="https://i.ytimg.com/vi/7bqahioS-IY/hqdefault.jpg" alt="" width="400px" height="440px">
           </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/WCqsUkA3jBs/hqdefault.jpg" alt="">
+          <div class="slider__contents"><img src="https://i.ytimg.com/vi/WCqsUkA3jBs/hqdefault.jpg" alt="" width="400px" height="440px">
           </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/W_dc4LofAno/hqdefault.jpg" alt="">      
+          <div class="slider__contents"><img src="https://i.ytimg.com/vi/W_dc4LofAno/hqdefault.jpg" alt="" width="400px" height="440px">      
         </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/WhZfKBgFA7w/hqdefault.jpg" alt="">      
+          <div class="slider__contents"><img src="https://i.ytimg.com/vi/WhZfKBgFA7w/hqdefault.jpg" alt="" width="400px" height="440px">      
         </div>
           
         </div>
@@ -238,17 +1130,18 @@
   <!-- GALERİ -->
 
   <div id="galeri">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/abstract">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/animals">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/city">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/people"><br>
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/abstract">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/animals">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/city">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/people"><br>
     <div class="yazı">
         <h3>ÜNİVERSİTEMİZDEN KARELER<hr></h3>  
     </div>
+    <img class="aw-zoom" src="http://lorempixel.com/200/200/abstract">
+    <img class="aw-zoom" src="http://lorempixel.com/200/200/animals">
+    <img class="aw-zoom" src="http://lorempixel.com/200/200/city">
+    <img class="aw-zoom" src="http://lorempixel.com/200/200/people">
+    <img class="aw-zoom" src="http://lorempixel.com/200/200/abstract">
+    <img class="aw-zoom" src="http://lorempixel.com/200/200/animals">
+    <img class="aw-zoom" src="http://lorempixel.com/200/200/city">
+    <img class="aw-zoom" src="http://lorempixel.com/200/200/people">
+    
 </div>
 
 </div>
@@ -264,17 +1157,17 @@
     <input type="radio" name="slider" title="slide3" class="slider__nav"/>
     <input type="radio" name="slider" title="slide4" class="slider__nav"/>
     <div class="slider__inner">
-      <div class="slider__contents"><img src="http://www.firat.edu.tr/images/event/1624618290.jpg" alt="" width="350px" height="400px">
+      <div class="slider__contents"><img src="http://www.firat.edu.tr/images/event/1624618290.jpg" alt="" width="400px" height="440px">
        
         <p class="slider__txt">11 HAZİRAN 2021</p>
       </div>
-      <div class="slider__contents"><img src="http://www.firat.edu.tr/images/event/1624529062.jpg" alt=""width="350px" height="400px">
+      <div class="slider__contents"><img src="http://www.firat.edu.tr/images/event/1624529062.jpg" alt=""width="400px" height="440px">
         <p class="slider__txt">12 HAZİRAN 2021</p>
       </div>
-      <div class="slider__contents"><img src="http://www.firat.edu.tr/images/event/1624528415.jpg" alt="" width="350px" height="400px">
+      <div class="slider__contents"><img src="http://www.firat.edu.tr/images/event/1624528415.jpg" alt="" width="400px" height="440px">
         <p class="slider__txt">11 MAYIS 2021</p>
       </div>
-      <div class="slider__contents"><img src="http://www.firat.edu.tr/images/event/1625835206.jpg" alt="" width="350px" height="400px">
+      <div class="slider__contents"><img src="http://www.firat.edu.tr/images/event/1625835206.jpg" alt="" width="400px" height="440px">
         <p class="slider__txt">11 TEMMUZ 2021</p>
       </div>
     </div>
@@ -426,16 +1319,19 @@
         </div>    
             <br><br><br>
 
-       
-        <ul class="ikon">
+       <div class="ikon">
+        <ul>
             
             <li><a href="https://www.linkedin.com/in/berfin-y-709683199/"><i class="fab fa-linkedin-in"></i></a></li>
             <li><a href="https://github.com/berffyasar"><i class="fab fa-youtube"></i></a></li> 
             <li><a href="https://www.instagram.com/berffyasar/"><i class="fab fa-instagram"></i></a></li>
             <li><a href="https://twitter.com/berffyasar"><i class="fab fa-twitter"></i></a></li>
         </ul>
-      
+           
     <hr>
+       </div>
+       
+   
       
     <div class="gizlilik">
     &copy;2021 Fırat Üniversitesi - Her hakkı saklıdır.
