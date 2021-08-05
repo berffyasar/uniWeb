@@ -76,6 +76,20 @@ a{
    -webkit-box-shadow: 1px 1px 10px #dc2c1d;
 }   
 
+.haberHeader{
+  background-color: #000;
+  color: white;
+  padding: 10px;
+}
+.haberHeader ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.haberHeader a{
+  color: white;
+  margin: 10px;
+}
 
 /* HABERLER 
 
@@ -157,6 +171,9 @@ margin-right: 1400px;
     background-color: #dc2c1d;
     text-align: center; 
     
+}
+.düzen3 a{
+  color: #000;
 }
 
 

@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mainn.css"/>
+  
+    <link rel="stylesheet" href="./haberler.css">
     <!--cdnjs font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--tablet, telefon-->
@@ -15,93 +16,7 @@
     <link rel="stylesheet" media="(max-width:500px)" href="telefon.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <title>Document</title>
-    <script>
-        $(document).ready(function(){
-            var slider = 0;
-            $('.sliderbutton li:first').css('background','yellow');
-            $.slider = function(toplam){
-                $('#slider li').hide();
-                if(slider < toplam-1)
-                {
-                    slider++;
-                    $('.sliderbutton li').css('background','red');
-                    $('.sliderbutton li:eq('+slider+')').css('background','yellow');
-                    $('#slider li:eq('+slider+')').fadeIn("fast");
-
-                }else if(slider < 0){
-
-                    slider = toplam-1;
-                    $('.sliderbutton li').css('background','red');
-                    $('.sliderbutton li:eq('+slider+')').css('background','yellow');
-                    $('#slider li:eq('+slider+')').fadeIn("fast");
-                }else{
-
-                    $('#slider li:first').fadeIn("fast");
-                    slider=0;
-                    $('.sliderbutton li').css('background','red');
-                    $('.sliderbutton li:eq('+slider+')').css('background','yellow');
-                }
-            }
-            var lenghtli = $('#slider li').length;
-            var interval = setInterval('$.slider('+lenghtli+')',3000);
-            $('#slider').hover(function(){
-                interval = clearInterval(interval);
-            },function(){
-                interval = setInterval('$.slider('+lenghtli+')',3000);
-            })
-            $('.sliderbutton li').click(function(){
-                $('.sliderbutton li').css('background','red');
-                $(this).css('background','yellow');
-                interval = clearInterval(interval);
-               var indis = $(this).index();
-                $('#slider li').hide();
-                $('#slider li:eq('+indis+')').fadeIn("fast");
-                slider = indis;
-                interval = setInterval('$.slider('+lenghtli+')',3000);
-
-            });
-            $('.sliderleft').click(function () {
-
-                slider--;
-                $('.sliderbutton li').css('background','red');
-                if(slider < 0)
-                {
-                    $('.sliderbutton li:last').css('background','yellow');
-                    slider = lenghtli-1;
-                }else{
-                    $('.sliderbutton li:eq('+slider+')').css('background','yellow');
-                }
-
-                $('#slider li').hide();
-                $('#slider li:eq('+slider+')').fadeIn("fast");
-
-
-            });
-            $('.sliderright').click(function () {
-
-                slider++;
-                $('.sliderbutton li').css('background','red');
-                if(slider > lenghtli-1)
-                {
-                    $('.sliderbutton li:first').css('background','yellow');
-                    slider = 0;
-                }else{
-                    $('.sliderbutton li:eq('+slider+')').css('background','yellow');
-                }
-
-                $('#slider li').hide();
-                $('#slider li:eq('+slider+')').fadeIn("fast");
-
-
-            });
-
-        });
-
-
-    </script>
-
-    
+    <title>Document</title> 
 
 
 </head>
@@ -997,6 +912,66 @@
                 </div>
             </div>
         </div>
+ 
+    <div class="trailer">
+    
+        <div class="haberHeader">
+            <ul>
+                <li>
+                    <h2>Haberler</h2>
+                </li>
+                <li>
+                    <a href="#">Anasayfa</a>/Haberler
+                </li>
+            </ul>
+        </div>
+        
+          <div class="slider">
+            <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+            <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+            <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+            <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+            <div class="slider__inner">
+              <div class="slider__contents"><img src="http://www.firat.edu.tr/images/news/1627375701.jpg" alt="" width="400px" height="440px">
+               
+                <p class="slider__txt">Üniversitemiz İletişim Fakültesi tarafından bu yıl ikincisi düzenlenen “Öğrenci Karma Sanal Sergisi” sanatseverlerin beğenisine sunuldu.. <button><a href="./detay.html">Detay</a></button></p>
+              </div>
+              <div class="slider__contents"><img src="http://www.firat.edu.tr/images/news/1627306579.jpg" alt=""width="400px" height="440px">
+                <p class="slider__txt">Üniversitemiz yöneticileri ile rehber öğretmenler toplantıda bir araya geldi.
+
+                    Üniversitemiz Atatürk Kültür Merkezinde gerçekleşen toplantıya.. <br> <button><a href="./detay.html">Detay</a></button></p>
+              </div>
+              <div class="slider__contents"><img src="http://www.firat.edu.tr/images/news/1627284627.jpg" alt="" width="400px" height="440px">
+                <p class="slider__txt">Üniversitemiz Rektörü Prof. Dr. Fahrettin GÖKTAŞ, Kurban Bayramı nedeniyle Üniversitemiz öğrencilerini evlerinde..<br> <button><a href="./detay.html">Detay</a></button></p>
+              </div>
+              <div class="slider__contents"><img src="http://www.firat.edu.tr/images/news/1626438261.jpg" alt="" width="400px" height="440px">
+                <p class="slider__txt">Üniversitemiz Spor Bilimleri Fakültesi 2020-2021 yılı mezuniyet töreni yapıldı.
+
+                    Fakülte binasında düzenlenen törenle 2020-2021.. <br> <button><a href="./detay.html">Detay</a></button></p>
+              </div>
+              <div class="slider__contents"><img src="http://www.firat.edu.tr/images/news/1627375701.jpg" alt="" width="400px" height="440px">
+               
+                <p class="slider__txt">Üniversitemiz İletişim Fakültesi tarafından bu yıl ikincisi düzenlenen “Öğrenci Karma Sanal Sergisi” sanatseverlerin beğenisine sunuldu.. <button><a href="./detay.html">Detay</a></button></p>
+              </div>
+              <div class="slider__contents"><img src="http://www.firat.edu.tr/images/news/1627306579.jpg" alt=""width="400px" height="440px">
+                <p class="slider__txt">Üniversitemiz yöneticileri ile rehber öğretmenler toplantıda bir araya geldi.
+
+                    Üniversitemiz Atatürk Kültür Merkezinde gerçekleşen toplantıya.. <br> <button><a href="./detay.html">Detay</a></button></p>
+              </div>
+              <div class="slider__contents"><img src="http://www.firat.edu.tr/images/news/1627284627.jpg" alt="" width="400px" height="440px">
+                <p class="slider__txt">Üniversitemiz Rektörü Prof. Dr. Fahrettin GÖKTAŞ, Kurban Bayramı nedeniyle Üniversitemiz öğrencilerini evlerinde..<br> <button<a href="./detay.html">Detay</a></button></p>
+              </div>
+             
+            </div>
+          </div>
+       
+        
+ 
+        
+    </div>
+    
+    </div>  
+</header>
 <script>function myFunction() {
     var x = document.getElementById("ustMenu");
     if (x.className === "menu") {
@@ -1005,244 +980,37 @@
       x.className = "menu";
     }
   }</script>
-            
-
-    <div class="trailer">
-    
-
-        <div id="slider">
-            <div class="sliderleft"></div>
-            <div class="sliderright"></div>
-            <li><img src="./\img\poster.jpg" alt=""></li>
-            <li><img src="./\img\DJG9PjvXUAEEGW9.jpg" alt=""></li>
-            <li><img src="./\img\20160823124532-20181220105756.jpg" alt=""></li>
-            <li><img src="./\img\frt_0.jpg" alt=""></li>
-          
-         </div>
-        
-         <div class="sliderbutton">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-           
-        </div>
-        <br>  
-        <marquee behavior=alternate bgcolor="#dc2c1d">
-            2209-B SANAYİYE YÖNELİK ÜNİVERSİTE ARAŞTIRMA PROJELERİ DESTEĞİ PROGRAMI 2021 YILI 2. DÖNEM ÇAĞRISI     
-        </marquee> 
-    
-        <div id="hızlıerişimler">
-            
-            <ul class="ikons">        
-                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601025374.jpg" alt=""></a><p>EBYS</p></li> 
-                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601029265.jpg" alt=""></a><p>OBS</p></li> 
-                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601029325.jpg" alt=""></a><p>ABS</p></li> 
-                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030307.jpg" alt=""></a><p>Fırat Haber</p></li> 
-                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030371.jpg" alt=""></a><p>KÜTÜPHANE</p></li> 
-                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030454.jpg" alt=""></a><p>Dış İlişkiler</p></li>
-            </ul>
-            <ul class="ikons">
-               
-                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030547.jpg"></a><P>E-Posta</P></li> 
-                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030636.jpg"></a><P>Mezun Bilgi Sistemi</P></li> 
-                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030833.jpg"></a><P>Erasmus</P></li> 
-                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030875.jpg"></a><p>UZAKTAN EĞİTİM</p></li> 
-                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030935.jpg"></a><p>HASTANE</p></li> 
-                <li><a href="https://github.com/berffyasar"><img src="http://www.firat.edu.tr/images/logo/1601030990.jpg"></a><p>BBS</p></li>  
-            </ul>   
-               
-        </div>
-
-    </div>
-
-
-    </div>
-</header>
-<!-- SLİDER-->
-
- 
-<!-- HIZLI GEÇİŞLER -->
-
-    <div class="düzen3">
-        <h3>HABERLER<hr></h3><a href="./haberler.html">Tüm Haberler</a>   
-    </div>
-    <div class="slider">
-        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
-        <input type="radio" name="slider" title="slide2" class="slider__nav"/>
-        <input type="radio" name="slider" title="slide3" class="slider__nav"/>
-        <input type="radio" name="slider" title="slide4" class="slider__nav"/>
-        <div class="slider__inner">
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/0_ZpkJdF2_8/hqdefault.jpg" alt="" width="400px" height="440px"> 
-            
-          </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/7bqahioS-IY/hqdefault.jpg" alt="" width="400px" height="440px">
-          </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/APtbVpgnkbA/hqdefault.jpg" alt="" width="400px" height="440px">
-          </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/Ak7JIQXjyck/hqdefault.jpg" alt="" width="400px" height="440px">
-          </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/CLQg3aHctNk/hqdefault.jpg" alt="" width="400px" height="440px">
-          </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/ErALre8W2HQ/hqdefault.jpg" alt="" width="400px" height="440px">
-          </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/RfTl4KAZ4lQ/hqdefault.jpg" alt="" width="400px" height="440px">
-          </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/7bqahioS-IY/hqdefault.jpg" alt="" width="400px" height="440px">
-          </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/WCqsUkA3jBs/hqdefault.jpg" alt="" width="400px" height="440px">
-          </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/W_dc4LofAno/hqdefault.jpg" alt="" width="400px" height="440px">      
-        </div>
-          <div class="slider__contents"><img src="https://i.ytimg.com/vi/WhZfKBgFA7w/hqdefault.jpg" alt="" width="400px" height="440px">      
-        </div>
-          
-        </div>
-      </div>
-<!-- HABERLER -->
-
-
 <div class="düzen3">
-    <h3>DUYURULAR<hr></h3><a href="./duyurular.css">Tüm Duyurular</a>
+    <h3>HABERLER<hr></h3>
 </div>
 <div class="page">
     <div id="duyurular">
         <ul>
-            <li><a href="">!!Üniversitemiz Gazetesi Nisan-Mayıs-Haziran Sayısı</a></li>
-            <li><a href="">!!2209-B Sanayiye Yönelik Üniversite Araştırma Projeleri Desteği Programı 2021 Yılı 2. Dönem Çağrısı</a></li>
-            <li><a href="">!!TÜBİTAK 2237-A kapsamında Akademik Becerileri Geliştirme ve Proje Hazırlama Eğitimi</a></li>
-            <li><a href="">!!SEA-EU JFS 2021 Çağrısı </a></li>
-            <li><a href="">!!8. Uluslararası Yeni Nesil İçin Malzeme Bilimi ve Nanoteknoloji Konferansı (MSNG 2021)</a></li>
-            <li><a href="">!!SEA-EU JFS 2021 Çağrısı </a></li>
-            <li><a href="">!!Üniversitemiz Gazetesi Nisan-Mayıs-Haziran Sayısı</a></li>
-            <li><a href="">!!2209-B Sanayiye Yönelik Üniversite Araştırma Projeleri Desteği Programı 2021 Yılı 2. Dönem Çağrısı</a></li>
-            <li><a href="">!!TÜBİTAK 2237-A kapsamında Akademik Becerileri Geliştirme ve Proje Hazırlama Eğitimi</a></li>
-            <li><a href="">!!SEA-EU JFS 2021 Çağrısı </a></li>
-            <li><a href="">!!Üniversitemiz Gazetesi Nisan-Mayıs-Haziran Sayısı</a></li>
-            <li><a href="">!!2209-B Sanayiye Yönelik Üniversite Araştırma Projeleri Desteği Programı 2021 Yılı 2. Dönem Çağrısı</a></li>
+            <li><a href=""><h3>Üniversitemiz İletişim Fakültesi’nden 2020-2021 yılı öğrenci sanal sergisi</h3> Üniversitemiz İletişim Fakültesi tarafından bu yıl ikincisi düzenlenen “Öğrenci Karma Sanal Sergisi” sanatseverlerin beğenisine sunuldu.</a></li>
+            <li><a href=""><h3>Üniversitemiz Yöneticileri ve Rehber Öğretmenler Toplantıda Buluştu</h3>Üniversitemiz yöneticileri ile rehber öğretmenler toplantıda bir araya geldi.
+
+                Üniversitemiz Atatürk Kültür Merkezinde gerçekleşen toplantıya, Üniversitemiz Rektörü Prof. Dr. Fahrettin GÖKTAŞ, Rektör Yardımcıları Prof. Dr. Soner ÖZGEN, Prof. Dr. Mehmet YILMAZ, Genel Sekreter Prof. Dr. Sinan AKPINAR, Milli Eğitim Müdür Yardımcısı Zeki ULUFER ile rehber öğretmenler katıldı.</a></li>
+            <li><a href=""><h3>Üniversitemiz Rektörü Prof. Dr. GÖKTAŞ, Öğrencilerin Evlerine Bayram Ziyareti Gerçekleştirdi</h3>Üniversitemiz Rektörü Prof. Dr. Fahrettin GÖKTAŞ, Kurban Bayramı nedeniyle Üniversitemiz öğrencilerini evlerinde ziyaret ederek bayramlarını tebrik etti.
+
+                Rektör Prof. Dr. Fahrettin GÖKTAŞ, Üniversitemiz Mühendislik, Tıp ve Veteriner Fakültelerinin birincilerine bayram ziyareti gerçekleştirdi.</a></li>
+            <li><a href=""><h3>Üniversitemiz Spor Bilimleri Fakültesi Mezuniyet Töreni Programı Düzenlendi</h3>Üniversitemiz Spor Bilimleri Fakültesi 2020-2021 yılı mezuniyet töreni yapıldı.
+
+                Fakülte binasında düzenlenen törenle 2020-2021 Eğitim Öğretim yılı sonunda mezun olan öğrencilere diplomaları ve hediyeleri, Spor Bilimleri Fakültesi Dekanı Prof. Dr. Yüksel SAVUCU ve akademik personel tarafından verildi.</a></li>
+            <li><a href=""><h3>Üniversitemiz Rektörü Prof. Dr. GÖKTAŞ, 15 Temmuz Demokrasi ve Milli Birlik Günü etkinliklerine katıldı.</h3></a></li>
+            <li><a href=""><h3>Üniversitemizde “15 Temmuz Şehitler Yolu Yürüyüş Parkurunun” Açılışı Yapıldı</h3></a></li>
+            <li><a href=""><h3>15 Temmuz Dijital Pulları</h3></a></li>
+            <li><a href=""><h3>Üniversitemiz Rektörü Prof. Dr. GÖKTAŞ’ın "15 Temmuz Şehitleri Anma, Demokrasi ve Milli Birlik Günü" Mesajıs</h3></a></li>
+            <li><a href=""><h3>Üniversitemiz Keban MYO’da Mezuniyet Töreni Programı Düzenlendi</h3></a></li>
+            <li><a href=""><h3>Üniversitemiz TBMYO’dan Mezuniyet Töreni</h3></a></li>
+            <li><a href=""><h3>Üniversitemiz İnsani ve Sosyal Bilimler Fakültesi 2020-2021 Akademik Yılı Mezuniyet Töreni Yapıldı</h3></a></li>
+            <li><a href=""><h3>Üniversitemiz Matematik ve Fizik Alanında Üst Sıralarda Yer Aldı</h3></a></li>
             
         
            
         </ul>
     </div>
-    
-
-  <!-- GALERİ -->
-
-  <div id="galeri">
-    <div class="yazı">
-        <h3>ÜNİVERSİTEMİZDEN KARELER<hr></h3>  
-    </div>
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/abstract">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/animals">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/city">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/people">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/abstract">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/animals">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/city">
-    <img class="aw-zoom" src="http://lorempixel.com/200/200/people">
-    
 </div>
 
-</div>
- 
-  
-
-<div class="düzen3">
-    <h3>ETKİNLİKLER<hr></h3><a href="#">Tüm Etkinlikler</a>   
-</div>
-  <div class="slider">
-    <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
-    <input type="radio" name="slider" title="slide2" class="slider__nav"/>
-    <input type="radio" name="slider" title="slide3" class="slider__nav"/>
-    <input type="radio" name="slider" title="slide4" class="slider__nav"/>
-    <div class="slider__inner">
-      <div class="slider__contents"><img src="http://www.firat.edu.tr/images/event/1624618290.jpg" alt="" width="400px" height="440px">
-       
-        <p class="slider__txt">11 HAZİRAN 2021</p>
-      </div>
-      <div class="slider__contents"><img src="http://www.firat.edu.tr/images/event/1624529062.jpg" alt=""width="400px" height="440px">
-        <p class="slider__txt">12 HAZİRAN 2021</p>
-      </div>
-      <div class="slider__contents"><img src="http://www.firat.edu.tr/images/event/1624528415.jpg" alt="" width="400px" height="440px">
-        <p class="slider__txt">11 MAYIS 2021</p>
-      </div>
-      <div class="slider__contents"><img src="http://www.firat.edu.tr/images/event/1625835206.jpg" alt="" width="400px" height="440px">
-        <p class="slider__txt">11 TEMMUZ 2021</p>
-      </div>
-    </div>
-  </div>
-     
-     
-           <!-- YAYINLAR
- <div id="yayınlar">
-                <iframe src="http://yeni.alparslan.edu.tr/new/kitap" scrolling="no" width="450px" height="340px" style="float: left;"></iframe>
-            </div>
-        </div>
-    -->
-
-    <!-- ETKİNLİKLER 
-    <div class="düzen3">
-        <h3>ETKİNLİKLER<hr></h3>Tüm Etkinlikler
-    </div>
-
-    <div id="etkinlikler">
-        <div class="dondurulecekler">
-            <div class="tetikleyici">
-              <img src="C:\Users\berfy\Pictures\hab11.PNG" class="onyuz">
-              <div class="arkayuz">
-                <h3>02 MAYIS<br> SAAT:15.00</h3>
-                <hr>
-                <p>YOGA FEDERASYONU İLE ONLİNE SEMİNER<HR> <br>YER: PROF. DR. MUSTAFA TEMİZER </p>
-              </div>
-            </div>   
-            
-            
-        </div>
-        <div class="dondurulecekler">
-            <div class="tetikleyici">
-              <img src="C:\Users\berfy\Pictures\hab11.PNG" class="onyuz">
-              <div class="arkayuz">
-                <h3>02 MAYIS<br> SAAT:15.00</h3>
-                <hr>
-                <p>YOGA FEDERASYONU İLE ONLİNE SEMİNER<HR> <br>YER: PROF. DR. MUSTAFA TEMİZER </p>
-              </div>
-            </div>
-        </div>
-        <div class="dondurulecekler">
-            <div class="tetikleyici">
-              <img src="C:\Users\berfy\Pictures\hab11.PNG" class="onyuz">
-              <div class="arkayuz">
-                <h3>02 MAYIS<br> SAAT:15.00</h3>
-                <hr>
-                <p>YOGA FEDERASYONU İLE ONLİNE SEMİNER<HR> <br>YER: PROF. DR. MUSTAFA TEMİZER </p>
-              </div>
-            </div>
-        </div>
-        <div class="dondurulecekler">
-            <div class="tetikleyici">
-              <img src="C:\Users\berfy\Pictures\hab11.PNG" class="onyuz">
-              <div class="arkayuz">
-                <h3>02 MAYIS<br> SAAT:15.00</h3>
-                <hr>
-                <p>YOGA FEDERASYONU İLE ONLİNE SEMİNER<HR> <br>YER: PROF. DR. MUSTAFA TEMİZER </p>
-              </div>
-            </div>
-        </div>
-        <div class="dondurulecekler">
-            <div class="tetikleyici">
-              <img src="C:\Users\berfy\Pictures\hab11.PNG" class="onyuz">
-              <div class="arkayuz">
-                <h3>02 MAYIS<br> SAAT:15.00</h3>
-                <hr>
-                <p>YOGA FEDERASYONU İLE ONLİNE SEMİNER<HR> <br>YER: PROF. DR. MUSTAFA TEMİZER </p>
-              </div>
-            </div>
-        </div>
-    </div>
-    -->
-
-    
 <!-- FOOTER -->
     
     <div id="footer">
